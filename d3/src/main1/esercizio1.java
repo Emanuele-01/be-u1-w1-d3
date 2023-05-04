@@ -23,9 +23,9 @@ public class esercizio1 {
 		
 		
 		if(word.length() % 2 == 0) {
-			System.out.println("il numero di caratteri è pari");
+			System.out.println(true);
 		}else{
-			System.out.println("il numero di caratteri è dispari");
+			System.out.println(false);
 		};
 		Word1.close();
 	};
@@ -38,13 +38,14 @@ public class esercizio1 {
 		Scanner year = new Scanner(System.in);
 		
 		System.out.println("scrivi un anno: ");
+		System.out.println("ritornerà true se bisestile o false se l'anno non è bisestile.");
 		
 		anno = year.nextInt();
 		
-		if(anno % 4 == 0 || anno % 100 == 0 && anno % 400 == 0) {
-			System.out.println("l'anno è bisestile");
+		if(anno % 400 == 0 || (anno % 4 == 0 && !(anno % 100 == 0))) {
+			System.out.println(true);
 		}else {
-			System.out.println("l'anno non è bisestile");
+			System.out.println(false);
 		}
 		year.close();
 		
