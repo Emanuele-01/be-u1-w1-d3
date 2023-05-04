@@ -21,7 +21,10 @@ public class esercizio3 {
 		
 		while (!Parola1.contains(":q")) {
 			
-			System.out.println(Arrays.toString(Parola1.split("")));
+//			System.out.println(Arrays.toString(Parola1.split("")));
+			
+			String[] lettere = Parola1.split("");
+			System.out.println(String.join(",", lettere));
 			break;
 		}
 		w1.close();
