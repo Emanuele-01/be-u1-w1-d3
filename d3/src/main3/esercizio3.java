@@ -1,6 +1,5 @@
 package main3;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class esercizio3 {

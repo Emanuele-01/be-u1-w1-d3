@@ -22,6 +22,7 @@ public class esercizio4 {
 			
 			System.out.print(i + " ");
 		}
+		
 		time.close();
 	};
 }
